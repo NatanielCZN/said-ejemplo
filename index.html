@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAID-UNJu - Subsecretaría de Articulación para el Desarrollo</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilo personalizado para usar la fuente Inter */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Transiciones suaves para una mejor experiencia de usuario */
+        .smooth-transition {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ========== HEADER / NAVBAR ========== -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="nav-link" data-page="home">
+                <div class="flex items-center space-x-2">
+                    <!-- Icono SVG como logo -->
+                    <svg class="h-10 w-10 text-blue-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                    </svg>
+                    <span class="text-xl font-bold text-blue-800">SAID-UNJu</span>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#" class="text-gray-600 hover:text-blue-600 smooth-transition nav-link" data-page="home">Inicio</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 smooth-transition nav-link" data-page="courses">Cursos</a>
+                <a href="#noticias" class="text-gray-600 hover:text-blue-600 smooth-transition">Noticias</a>
+                <a href="#contacto" class="text-gray-600 hover:text-blue-600 smooth-transition">Contacto</a>
+            </div>
+            <!-- Botón para menú móvil -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Menú desplegable para móvil -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="#" class="block text-gray-600 hover:text-blue-600 nav-link" data-page="home">Inicio</a>
+            <a href="#" class="block text-gray-600 hover:text-blue-600 nav-link" data-page="courses">Cursos</a>
+            <a href="#noticias" class="block text-gray-600 hover:text-blue-600">Noticias</a>
+            <a href="#contacto" class="block text-gray-600 hover:text-blue-600">Contacto</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== PÁGINA DE INICIO ========== -->
+        <div id="home-page" class="page-content">
+            <!-- Sección Hero -->
+            <section class="relative h-[60vh] md:h-[80vh] bg-cover bg-center" style="background-image: url('https://placehold.co/1600x900/334155/e2e8f0?text=SAID-UNJu');">
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div class="relative container mx-auto px-6 h-full flex flex-col justify-center items-center text-center text-white">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Subsecretaría de Articulación para el Desarrollo</h1>
+                    <p class="text-lg md:text-2xl mb-8">Vinculando la universidad con la comunidad para un futuro próspero.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-white hover:text-blue-300 smooth-transition"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg></a>
+                        <a href="#" class="text-white hover:text-blue-300 smooth-transition"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm0 1.623c-2.387 0-2.71.01-3.66.058a3.262 3.262 0 00-1.567.44c-.533.229-1.01.51-1.48.98a3.262 3.262 0 00-.98 1.48c-.21.533-.391 1.034-.44 1.567-.048.95-.058 1.273-.058 3.66s.01 2.71.058 3.66c.049.533.23 1.034.44 1.567.229.533.51 1.01.98 1.48.47.47.947.751 1.48.98.533.21 1.034.391 1.567.44.95.048 1.273.058 3.66.058s2.71-.01 3.66-.058a3.262 3.262 0 001.567-.44c.533-.229 1.01-.51 1.48-.98.47-.47.751-.947.98-1.48.21-.533.391-1.034.44-1.567.048-.95.058-1.273.058-3.66s-.01-2.71-.058-3.66c-.049-.533-.23-1.034-.44-1.567a3.262 3.262 0 00-.98-1.48 3.262 3.262 0 00-1.48-.98c-.533-.21-1.034-.391-1.567-.44-.95-.048-1.273-.058-3.66-.058zM12 8.118a3.882 3.882 0 100 7.764 3.882 3.882 0 000-7.764zm0 6.138a2.256 2.256 0 110-4.512 2.256 2.256 0 010 4.512zm4.965-7.163a.96.96 0 100-1.92.96.96 0 000 1.92z" clip-rule="evenodd"></path></svg></a>
+                        <a href="#" class="text-white hover:text-blue-300 smooth-transition"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección "¿Qué Hacemos?" -->
+            <section class="py-16 bg-white">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">¿Qué Hacemos en SAID-UNJu?</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto mb-12">Somos el nexo entre el conocimiento generado en la universidad y las necesidades de la sociedad, impulsando el desarrollo regional a través de la innovación y la colaboración.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 smooth-transition">
+                            <h3 class="text-xl font-semibold text-blue-700 mb-2">Innovación y Emprendedurismo</h3>
+                            <p class="text-gray-600">Fomentamos la cultura emprendedora y apoyamos proyectos innovadores que surgen de nuestra comunidad universitaria.</p>
+                        </div>
+                        <div class="p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 smooth-transition">
+                            <h3 class="text-xl font-semibold text-blue-700 mb-2">Vinculación Estratégica</h3>
+                            <p class="text-gray-600">Creamos puentes entre la academia y los sectores productivos, sociales y gubernamentales.</p>
+                        </div>
+                        <div class="p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 smooth-transition">
+                            <h3 class="text-xl font-semibold text-blue-700 mb-2">Capacitación Continua</h3>
+                            <p class="text-gray-600">Ofrecemos cursos y talleres para profesionales y la comunidad, actualizando conocimientos y habilidades.</p>
+                        </div>
+                        <div class="p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 smooth-transition">
+                            <h3 class="text-xl font-semibold text-blue-700 mb-2">Proyectos de Impacto</h3>
+                            <p class="text-gray-600">Desarrollamos iniciativas que generan un impacto social y económico positivo en nuestra región.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Noticias -->
+            <section id="noticias" class="py-16">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Últimas Actividades</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Noticia 1 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 smooth-transition">
+                            <img src="https://placehold.co/600x400/60a5fa/ffffff?text=Evento" alt="Jornada de Emprendedores" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <span class="text-sm text-gray-500">15 de Agosto, 2025</span>
+                                <h3 class="text-xl font-semibold my-2">Exitosa Jornada de Emprendedores Universitarios</h3>
+                                <p class="text-gray-600">Más de 50 proyectos innovadores se presentaron en el evento anual que conecta a estudiantes con inversores.</p>
+                            </div>
+                        </div>
+                        <!-- Noticia 2 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 smooth-transition">
+                            <img src="https://placehold.co/600x400/34d399/ffffff?text=Convenio" alt="Firma de convenio" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <span class="text-sm text-gray-500">10 de Agosto, 2025</span>
+                                <h3 class="text-xl font-semibold my-2">Nuevo Convenio de Colaboración con Empresas Locales</h3>
+                                <p class="text-gray-600">Se firmó un acuerdo para promover pasantías y proyectos de investigación conjuntos con el sector tecnológico.</p>
+                            </div>
+                        </div>
+                        <!-- Noticia 3 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 smooth-transition">
+                            <img src="https://placehold.co/600x400/fbbf24/ffffff?text=Taller" alt="Taller de Marketing" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <span class="text-sm text-gray-500">5 de Agosto, 2025</span>
+                                <h3 class="text-xl font-semibold my-2">Abierta la Inscripción para el Taller de Marketing Digital</h3>
+                                <p class="text-gray-600">Una nueva edición del popular taller orientado a potenciar las ventas de pequeños y medianos emprendimientos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ========== PÁGINA DE CURSOS ========== -->
+        <div id="courses-page" class="page-content hidden">
+            <section class="py-16">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Nuestros Cursos y Capacitaciones</h2>
+                    <p class="text-gray-600 text-center max-w-3xl mx-auto mb-12">Explora nuestra oferta académica diseñada para potenciar tu desarrollo profesional y personal. Haz clic en un curso para ver más detalles.</p>
+                    <div id="course-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Las cards de los cursos se insertarán aquí dinámicamente -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ========== PÁGINA DE DETALLE DEL CURSO ========== -->
+        <div id="course-detail-page" class="page-content hidden">
+            <section class="py-16 bg-white">
+                <div class="container mx-auto px-6">
+                    <button id="back-to-courses" class="mb-8 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                        </svg>
+                        Volver a Cursos
+                    </button>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                        <div class="lg:col-span-2">
+                            <h1 id="detail-title" class="text-4xl font-bold text-gray-800 mb-4"></h1>
+                            <p id="detail-description" class="text-lg text-gray-600 mb-8"></p>
+                            
+                            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Temario del Curso</h3>
+                            <ul id="detail-syllabus" class="list-disc list-inside space-y-2 text-gray-600 mb-8">
+                                <!-- El temario se insertará aquí -->
+                            </ul>
+                        </div>
+                        <div>
+                            <img id="detail-image" src="" alt="Imagen del curso" class="w-full h-auto object-cover rounded-lg shadow-lg mb-6">
+                            <div class="bg-gray-100 p-6 rounded-lg border">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-4">Información Clave</h3>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> <span id="detail-duration"></span></li>
+                                    <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg> <span id="detail-instructor"></span></li>
+                                    <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 21z" /></svg> <span id="detail-modality"></span></li>
+                                </ul>
+                                <button class="mt-6 w-full bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 smooth-transition">Inscribirse Ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer id="contacto" class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">SAID-UNJu</h3>
+                    <p class="text-gray-400">Subsecretaría de Articulación para el Desarrollo de la Universidad Nacional de Jujuy.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contacto</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Dirección: Av. Bolivia 1239, S.S. de Jujuy</li>
+                        <li>Teléfono: (388) 422-1234</li>
+                        <li>Email: said@unju.edu.ar</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Síguenos</h3>
+                    <div class="flex space-x-4 justify-center md:justify-start">
+                        <a href="#" class="text-gray-400 hover:text-white smooth-transition">Facebook</a>
+                        <a href="#" class="text-gray-400 hover:text-white smooth-transition">Instagram</a>
+                        <a href="#" class="text-gray-400 hover:text-white smooth-transition">Twitter/X</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 SAID-UNJu. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- DATOS DE LOS CURSOS (simulando una base de datos) ---
+            const coursesData = [
+                {
+                    id: 1,
+                    title: 'Introducción a la Programación con Python',
+                    short_desc: 'Aprende los fundamentos de la programación con uno de los lenguajes más demandados del mundo.',
+                    long_desc: 'Este curso está diseñado para principiantes sin experiencia previa en programación. Cubriremos variables, tipos de datos, estructuras de control, funciones y una introducción a la programación orientada a objetos. Al finalizar, serás capaz de crear tus propios scripts para automatizar tareas.',
+                    image: 'https://placehold.co/600x400/38bdf8/ffffff?text=Python',
+                    duration: '8 semanas',
+                    instructor: 'Dr. Alan Turing',
+                    modality: 'Virtual con clases en vivo',
+                    syllabus: [
+                        'Instalación y configuración del entorno',
+                        'Variables, tipos de datos y operadores',
+                        'Estructuras de control: condicionales y bucles',
+                        'Funciones y módulos',
+                        'Manejo de archivos y excepciones',
+                        'Proyecto final: Analizador de datos simple'
+                    ]
+                },
+                {
+                    id: 2,
+                    title: 'Gestión de Proyectos para PyMEs',
+                    short_desc: 'Adquiere herramientas prácticas para planificar, ejecutar y cerrar proyectos exitosamente en tu empresa.',
+                    long_desc: 'En este taller intensivo, aprenderás metodologías ágiles y tradicionales de gestión de proyectos. Nos enfocaremos en la aplicación práctica en Pequeñas y Medianas Empresas, optimizando recursos y mejorando la comunicación del equipo. Ideal para emprendedores y jefes de área.',
+                    image: 'https://placehold.co/600x400/a78bfa/ffffff?text=Proyectos',
+                    duration: '4 semanas',
+                    instructor: 'Lic. Ada Lovelace',
+                    modality: 'Presencial',
+                    syllabus: [
+                        'Ciclo de vida de un proyecto',
+                        'Metodologías: Scrum y Kanban',
+                        'Herramientas de gestión: Trello y Asana',
+                        'Gestión de riesgos y presupuesto',
+                        'Comunicación efectiva y liderazgo',
+                        'Caso de estudio práctico'
+                    ]
+                },
+                {
+                    id: 3,
+                    title: 'Oratoria y Liderazgo',
+                    short_desc: 'Desarrolla tu capacidad de comunicación y persuasión para inspirar a tus equipos y audiencias.',
+                    long_desc: 'Pierde el miedo a hablar en público y convierte tus presentaciones en experiencias memorables. Este curso combina técnicas de oratoria, lenguaje corporal, storytelling y principios de liderazgo para formar comunicadores integrales y efectivos.',
+                    image: 'https://placehold.co/600x400/f87171/ffffff?text=Oratoria',
+                    duration: '6 semanas',
+                    instructor: 'Mg. Grace Hopper',
+                    modality: 'Híbrido (Presencial y Virtual)',
+                    syllabus: [
+                        'Estructura de un discurso efectivo',
+                        'Técnicas de control de nervios',
+                        'Uso de la voz y lenguaje no verbal',
+                        'Storytelling para conectar con la audiencia',
+                        'Liderazgo comunicacional',
+                        'Prácticas de presentación con feedback'
+                    ]
+                },
+                {
+                    id: 4,
+                    title: 'Herramientas de Diseño Gráfico',
+                    short_desc: 'Domina las herramientas esenciales para crear contenido visual atractivo para tus redes sociales y marca.',
+                    long_desc: 'Aprende a utilizar las aplicaciones líderes del mercado para crear logos, flyers, posts para redes sociales y más. No se requiere experiencia previa, solo creatividad y ganas de aprender los fundamentos del diseño y la comunicación visual.',
+                    image: 'https://placehold.co/600x400/facc15/ffffff?text=Diseño',
+                    duration: '10 semanas',
+                    instructor: 'Ing. Tim Berners-Lee',
+                    modality: 'Virtual a tu propio ritmo',
+                    syllabus: [
+                        'Principios de composición y teoría del color',
+                        'Introducción a la interfaz de software de diseño',
+                        'Creación de logotipos y branding',
+                        'Diseño para redes sociales (Instagram, Facebook)',
+                        'Edición básica de fotografías',
+                        'Proyecto final: Creación de identidad visual'
+                    ]
+                }
+            ];
+
+            // --- LÓGICA DE NAVEGACIÓN Y RENDERIZADO ---
+            const pages = document.querySelectorAll('.page-content');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const courseListPage = document.getElementById('courses-page');
+            const courseDetailPage = document.getElementById('course-detail-page');
+            const courseListContainer = document.getElementById('course-list');
+            const backToCoursesButton = document.getElementById('back-to-courses');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Función para mostrar una página y ocultar las demás
+            function showPage(pageId) {
+                pages.forEach(page => {
+                    if (page.id === pageId) {
+                        page.classList.remove('hidden');
+                    } else {
+                        page.classList.add('hidden');
+                    }
+                });
+                window.scrollTo(0, 0); // Volver al inicio de la página
+                mobileMenu.classList.add('hidden'); // Ocultar menú móvil al navegar
+            }
+
+            // Manejador de clics en los enlaces de navegación
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const pageId = this.dataset.page + '-page';
+                    showPage(pageId);
+                });
+            });
+
+            // Función para renderizar la lista de cursos
+            function renderCourseList() {
+                courseListContainer.innerHTML = '';
+                coursesData.forEach(course => {
+                    const courseCard = document.createElement('div');
+                    courseCard.className = 'bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 smooth-transition cursor-pointer';
+                    courseCard.dataset.courseId = course.id;
+                    courseCard.innerHTML = `
+                        <img src="${course.image}" alt="${course.title}" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold my-2">${course.title}</h3>
+                            <p class="text-gray-600 mb-4">${course.short_desc}</p>
+                            <span class="font-semibold text-blue-600">Ver más detalles &rarr;</span>
+                        </div>
+                    `;
+                    courseCard.addEventListener('click', () => showCourseDetail(course.id));
+                    courseListContainer.appendChild(courseCard);
+                });
+            }
+
+            // Función para mostrar el detalle de un curso
+            function showCourseDetail(courseId) {
+                const course = coursesData.find(c => c.id === courseId);
+                if (!course) return;
+
+                document.getElementById('detail-title').textContent = course.title;
+                document.getElementById('detail-description').textContent = course.long_desc;
+                document.getElementById('detail-image').src = course.image;
+                document.getElementById('detail-image').alt = course.title;
+                document.getElementById('detail-duration').textContent = `Duración: ${course.duration}`;
+                document.getElementById('detail-instructor').textContent = `Instructor: ${course.instructor}`;
+                document.getElementById('detail-modality').textContent = `Modalidad: ${course.modality}`;
+                
+                const syllabusList = document.getElementById('detail-syllabus');
+                syllabusList.innerHTML = '';
+                course.syllabus.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = item;
+                    syllabusList.appendChild(li);
+                });
+
+                showPage('course-detail-page');
+            }
+
+            // Event listener para el botón "Volver a Cursos"
+            backToCoursesButton.addEventListener('click', () => {
+                showPage('courses-page');
+            });
+
+            // Event listener para el menú móvil
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Carga inicial
+            renderCourseList();
+            showPage('home-page');
+        });
+    </script>
+
+</body>
+</html>
